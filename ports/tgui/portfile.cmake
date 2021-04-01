@@ -6,7 +6,7 @@ vcpkg_from_github(
     HEAD_REF 0.9
 )
 
-vcpkg_check_features(
+vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
     FEATURES
         shared TGUI_SHARED_LIBS
         tool TGUI_BUILD_GUI_BUILDER
